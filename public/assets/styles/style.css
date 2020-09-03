@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 0em;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -10px;
+    top: -4px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+
+
+}
+
+/* navbar */
+nav {
+    display: flex;
+    background-color: #2e4963;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: whitesmoke;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+nav .logo h4 {
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+    z-index: 1;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 23%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1em;
+    list-style-type: none;
+}
+
+nav ul li a:hover {
+    color: rgb(250, 240, 255);
+    font-weight: bold;
+}
+
+/* body */
+.session {
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 5em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.paragraf {
+    line-height: 2;
+    text-align: justify;
+}
+
+p .skill {
+    line-height: 2;
+    text-align: center;
+}
+
+#content {
+    float: left;
+    width: 75%;
+
+}
+
+.sd {
+    margin-right: 5em;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img-circle {
+    margin-top: auto;
+    width: 15%;
+    float: left;
+}
+
+#judul-profile {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.colored {
+    border: 2px double #38e6d8;
+    width: 17%;
+}
+
+.solo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.timeline1 {
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 5em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.timeline2 {
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 5em;
+    text-align: center;
+    margin-bottom: 3em;
+    padding: 1em 5em;
+
+}
+
+/* aside */
+.image-profile {
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.address {
+    text-align: center;
+    position: absolute;
+    height: 335px;
+    width: 28%;
+    right: 130px;
+    padding-top: 0px;
+    color: cornsilk;
+}
+
+.icons {
+    margin-right: 1em;
+}
+
+.trought {
+    width: 50px;
+    cursor: pointer;
+}
+
+.table {
+    display: none;
+    margin: 0 auto;
+}
+
+/* footer */
+footer {
+    clear: both;
+    padding-bottom: 10px;
+    background-color: #2e4963;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.row {
+    display: flex;
+}
+
+.row h3 {
+    color: whitesmoke;
+}
+
+.contact-details {
+    box-sizing: border-box;
+    width: 40%;
+    padding: 1em;
+
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: rgb(175, 231, 71);
+}
+
+.row-sosial img {
+    padding-left: 1em;
+}
+
+/* responsive */
+@media screen and (max-width: 1140px) {
+
+    nav ul {
+        width: 40%;
+    }
+
+    .contact-details {
+        width: 100%;
+    }
+
+    .row {
+        display: inline;
+    }
+
+    .image-profile {
+        width: 251px;
+        height: 328px;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .timeline1 {
+        width: 100%;
+    }
+
+    .solo {
+        display: block;
+    }
+
+    .timeline2 {
+        width: 100%;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        background-color: #2e4963;
+        width: 100%;
+        z-index: 0;
+        transform: translateX(100%);
+        transition: all 2s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
